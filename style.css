@@ -1,6 +1,6 @@
 /*basic settings*/
 body {
-    background-color: #031017;
+    background-color: #04141d;
     color: #eedbd9;
 }
 
@@ -11,7 +11,7 @@ body {
 }
 
 .col{
-    background-color: #f4887c;
+    background-color:#eedbd9;
     border-radius: 15px;
     margin: 1%;
     text-align: center;
@@ -22,7 +22,6 @@ body {
 }
 
 .div-link::after{
-    font-family: "Arial";
     content: "\2197";
 }
 
@@ -39,7 +38,7 @@ a::after {
 
 a {
     text-decoration: none;
-    color: #f4887c;
+    color: #70729a;
 }
 
 a:hover {
@@ -47,7 +46,8 @@ a:hover {
 }
 
 .row a{
-    color: #eedbd9;
+    background-color: #eedbd9;
+    color:#04141d;
 }
 
 .row a::after{
@@ -55,8 +55,12 @@ a:hover {
 }
 
 .row a:hover {
-    background-color: #eedbd9;
-    color: #f4887c;
+    background-color: #70729a;
+    color: #eedbd9;
+}
+
+.social-buttons a::after {
+    content: "";
 }
 
 /*images*/
@@ -69,4 +73,11 @@ a:hover {
     border-color: #eedbd9;
     margin-right: 2%;
     float: left;
+}
+
+/*buttons*/
+
+.btn-light {
+    background-color:#eedbd9;
+    color:#04141d;
 }
