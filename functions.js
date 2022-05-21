@@ -1,7 +1,6 @@
 function addContainer(div, content, name) {
     var container = document.getElementById(div);
     var newContainer = document.createElement("div");
-    newContainer.setAttribute("class", "container");
     newContainer.setAttribute("id", name);
     newContainer.innerHTML = (content);
     container.appendChild(newContainer);
@@ -22,7 +21,7 @@ function toggleContainers(div, content, name) {
     };
 
 var socialContent = 
-    "<div class='social-buttons'><a href='https://twitter.com/bibwiss' target='_blank'><button type='button' class='btn btn-light'><i class='fa-brands fa-twitter'></i> Twitter</button></a><a href='http://www.linkedin.com/in/sophie-schneider-b72428150' target='_blank'><button type='button' class='btn btn-light'><i class='fa-brands fa-linkedin-in'></i> LinkedIn</button></a><a href='https://github.com/bibwiss' target='_blank'><button type='button' class='btn btn-light'><i class='fa-brands fa-github'></i> Github</button></a><a href=' https://orcid.org/0000-0002-8303-1798 ' target='_blank'><button type='button' class='btn btn-light'><i class='fa-brands fa-orcid'></i> Orcid</button></a></div>"
+    "<div class='social-buttons'><a href='https://twitter.com/bibwiss' target='_blank'><button type='button' class='btn btn-light'><i class='fa-brands fa-twitter'></i> Twitter</button></a><a href='http://www.linkedin.com/in/sophie-schneider-b72428150' target='_blank'><button type='button' class='btn btn-light'><i class='fa-brands fa-linkedin-in'></i> LinkedIn</button></a><a href='https://github.com/bibwiss' target='_blank'><button type='button' class='btn btn-light'><i class='fa-brands fa-github'></i> Github</button></a><a href=' https://orcid.org/0000-0002-8303-1798 ' target='_blank'><button type='button' class='btn btn-light'><i class='fa-brands fa-orcid'></i> Orcid</button></a><a href=' https://www.researchgate.net/profile/Sophie-Schneider-15 ' target='_blank'><button type='button' class='btn btn-light'><i class='fa-brands fa-researchgate'></i> ResearchGate</button></a><a href='https://infowissblog.de/' target='_blank'><button type='button' class='btn btn-light'><i class='fa-solid fa-earth-europe'></i> Blog</button></a></div>"
 
 toggleContainers("div-social", socialContent, "social-added");
 
