@@ -7,10 +7,22 @@ body {
 /*divs*/
 .container{
     border-radius: 15px;
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 2%;
+    margin-top: 4%;
+}
+
+.col{
+    background-color: #f4887c;
+    border-radius: 15px;
+    margin: 1%;
+    text-align: center;
+}
+
+.div-append::after{
+    content: "✚";
+}
+
+.div-link::after{
+    content: "⭧";
 }
 
 /*text*/
@@ -20,10 +32,6 @@ h1 {
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 2%;
-}
-
-#bio-short {
-    margin-left: 11%;
 }
 
 /*links*/
@@ -40,6 +48,19 @@ a:hover {
     color: #eedbd9;
 }
 
+.row a{
+    color: #eedbd9;
+}
+
+.row a::after{
+    content: "";
+}
+
+.row a:hover {
+    background-color: #eedbd9;
+    color: #f4887c;
+}
+
 /*images*/
 #img_profile{
     height: 100px;
@@ -48,5 +69,6 @@ a:hover {
     border-style: solid;
     border-width: 5%;
     border-color: #eedbd9;
+    margin-right: 2%;
     float: left;
 }
