@@ -1,0 +1,52 @@
+/*basic settings*/
+body {
+    background-color: #031017;
+    color: #eedbd9;
+}
+
+/*divs*/
+.container{
+    border-radius: 15px;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+}
+
+/*text*/
+
+h1 {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+}
+
+#bio-short {
+    margin-left: 11%;
+}
+
+/*links*/
+a::after {
+    content: "⭧";
+}
+
+a {
+    text-decoration: none;
+    color: #f4887c;
+}
+
+a:hover {
+    color: #eedbd9;
+}
+
+/*images*/
+#img_profile{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 5%;
+    border-color: #eedbd9;
+    float: left;
+}
