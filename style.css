@@ -75,6 +75,10 @@ a:hover {
     content: "\f057";
 }
 
+.not-active:focus{
+    background-color: #eedbd9;
+}
+
 .btn-light a {
     color:#04141d;
 }
