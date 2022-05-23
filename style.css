@@ -59,11 +59,15 @@ a:hover {
 }
 
 .not-active::before{
-    content: "✚";
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f055";
 }
 
 .btn-clicked::before{
-    content: "\1F7AD";
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f057";
 }
 
 .btn-light a {
