@@ -56,6 +56,7 @@ a:hover {
     background-color:#eedbd9;
     color:#04141d;
     margin: 1%;
+    text-align: left;
 }
 
 .not-active::before{
