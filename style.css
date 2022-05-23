@@ -35,7 +35,7 @@ a {
 }
 
 a:hover {
-    color: #eedbd9;
+    color: white;
 }
 
 /*images*/
@@ -63,7 +63,7 @@ a:hover {
 }
 
 .btn-clicked::before{
-    content: "🞭";
+    content: "\1F7AD";
 }
 
 .btn-light a {
@@ -72,7 +72,7 @@ a:hover {
 
 .btn-light a:hover {
     background-color:white;
-    color:#04141d;
+    color:#eedbd9;
 }
 
 
