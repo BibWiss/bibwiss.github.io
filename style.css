@@ -2,22 +2,12 @@
 body {
     background-color: #04141d;
     color: white;
+    margin: 2%;
 }
 
 /*divs*/
 .container{
     border-radius: 15px;
-    margin-top: 4%;
-}
-
-.row{
-    background-color: white;
-    margin-top: 2%;
-    margin-bottom: 2%;
-}
-
-.row > * {
-    margin-top: -2%;
 }
 
 .col{
@@ -27,22 +17,10 @@ body {
     text-align: center;
 }
 
-.added-div{
-    color:#04141d;
-}
-
-.added-div a{
-    color:#04141d;
-}
-
-.added-div a:hover{
-    color: #eedbd9;
-}
-
 /*lists*/
 
 ul {
-    margin-top: 0%;
+    margin-top: 1.5%;
 }
 
 li a{
@@ -88,10 +66,15 @@ a:hover {
     background-color: white;
     border-color: white;
     color:#04141d;
-    margin: 1.5%;
+    margin: 1%;
     text-align: left;
     width:auto;
     display: block;
+}
+
+.btn-light.active {
+    background-color: #04141d;
+    color: white;
 }
 
 .not-active::before{
@@ -119,6 +102,10 @@ a:hover {
     color:#eedbd9;
 }
 
+
+.social-buttons a {
+    box-shadow: none;
+}
 
 .social-buttons a::after {
     content: "";
