@@ -1,7 +1,7 @@
 /*basic settings*/
 body {
     background-color: #04141d;
-    color: #eedbd9;
+    color: white;
 }
 
 /*divs*/
@@ -10,11 +10,33 @@ body {
     margin-top: 4%;
 }
 
+.row{
+    background-color: white;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.row > * {
+    margin-top: -2%;
+}
+
 .col{
     background-color:#eedbd9;
     border-radius: 15px;
     margin: 1%;
     text-align: center;
+}
+
+.added-div{
+    color:#04141d;
+}
+
+.added-div a{
+    color:#04141d;
+}
+
+.added-div a:hover{
+    color: #eedbd9;
 }
 
 li a{
@@ -49,7 +71,7 @@ a:hover {
     border-radius: 50%;
     border-style: solid;
     border-width: 5%;
-    border-color: #eedbd9;
+    border-color: white;
     margin-right: 2%;
     float: left;
 }
@@ -57,26 +79,28 @@ a:hover {
 /*buttons*/
 
 .btn-light {
-    background-color:#eedbd9;
+    background-color: white;
     color:#04141d;
-    margin: 1%;
+    margin: 1.5%;
     text-align: left;
+    width:auto;
+    display:block;
 }
 
 .not-active::before{
     font-family: "Font Awesome 5 Free"; 
     font-weight: 900; 
-    content: "\f055";
+    content: "\f13a";
 }
 
 .btn-clicked::before{
     font-family: "Font Awesome 5 Free"; 
     font-weight: 900; 
-    content: "\f057";
+    content: "\f139";
 }
 
 .not-active:focus{
-    background-color: #eedbd9;
+    background-color: white;
 }
 
 .btn-light a {
@@ -91,4 +115,14 @@ a:hover {
 
 .social-buttons a::after {
     content: "";
+}
+
+.social-buttons button {
+    background-color: #eedbd9;
+    display: inline;
+}
+
+.social-buttons button:hover {
+    background-color: #04141d;
+    color: #eedbd9;
 }
