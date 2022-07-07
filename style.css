@@ -39,6 +39,12 @@ body {
     color: #eedbd9;
 }
 
+/*lists*/
+
+ul {
+    margin-top: 0%;
+}
+
 li a{
     box-shadow: inset 0 -.2rem 0 0 rgb(238, 219, 217, 1)!important;
 }
@@ -78,13 +84,14 @@ a:hover {
 
 /*buttons*/
 
-.btn-light {
+.btn-light, .btn-light:hover, .btn-light:focus {
     background-color: white;
+    border-color: white;
     color:#04141d;
     margin: 1.5%;
     text-align: left;
     width:auto;
-    display:block;
+    display: block;
 }
 
 .not-active::before{
@@ -119,7 +126,7 @@ a:hover {
 
 .social-buttons button {
     background-color: #eedbd9;
-    display: inline;
+    display: inline !important;
 }
 
 .social-buttons button:hover {
