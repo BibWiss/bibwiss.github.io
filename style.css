@@ -84,7 +84,7 @@ a:hover {
 
 /*buttons*/
 
-.btn-light, .btn-light:hover, .btn-light:focus {
+.btn-light, .btn-light:hover, .btn-light:focus, .btn-light:active {
     background-color: white;
     border-color: white;
     color:#04141d;
