@@ -28,7 +28,7 @@ body {
     .description, .description-index {
         width: 100%!important;
         height: 100%!important;
-        position: none!important;
+        position: relative !important;
     }
     .container{
         width: 100%;
