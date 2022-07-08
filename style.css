@@ -19,6 +19,32 @@ body {
     text-align: center;
 }
 
+@media screen and (max-width: 800px)  {
+    .description{
+        width: 100%!important;
+        height: 100%!important;
+    }
+    .container{
+        width: 100%;
+        margin-left: 0%;
+    }
+    .header{
+        width: 40%!important;
+    }
+    .bio-short{
+        margin: 2%;
+    }
+    .description > h1 {
+        position: relative!important;
+        float:none!important;
+        margin: 2%!important;
+        width: 95%!important;
+    }
+    #img_profile{
+        width: 25%!important;
+        height: 25%!important;
+    }
+}
 .description {
     width: 25%;
     height: 25%;
@@ -45,7 +71,6 @@ ul {
 h1 {
     position: absolute;
     float: right;
-    z-index: -100;
     color: white;
     font-weight: 500;
     width: inherit;
