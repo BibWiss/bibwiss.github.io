@@ -161,7 +161,7 @@ a:hover {
 .btn-back::before{
     font-family: "Font Awesome 5 Free"; 
     font-weight: 900; 
-    content: "\f137";
+    content: "\f137" !important;
 }
 
 .btn-light a {
