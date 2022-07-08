@@ -3,7 +3,7 @@
 body {
     background-color: #04141d;
     color: white;
-    padding: 2%;
+    padding: 4%;
     border-color: white;
     border-style: solid;
     box-sizing: border-box; 
@@ -25,9 +25,10 @@ body {
 }
 
 @media screen and (max-width: 800px)  {
-    .description{
+    .description, .description-index {
         width: 100%!important;
         height: 100%!important;
+        position: none!important;
     }
     .container{
         width: 100%;
@@ -53,6 +54,12 @@ body {
 .description {
     width: 25%;
     height: 25%;
+    position:fixed;
+}
+
+.description-index {
+    width: 25%;
+    height: 25%;
 }
 
 .bio-short {
@@ -74,11 +81,8 @@ ul {
 }
 
 h1 {
-    position: absolute;
-    float: right;
     color: white;
     font-weight: 500;
-    width: inherit;
 }
 
 .blog-title{
@@ -98,6 +102,10 @@ a {
 
 a:hover {
     color: white;
+}
+
+.internal-link::after {
+    content: none;
 }
 
 /*images*/
