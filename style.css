@@ -1,8 +1,13 @@
 /*basic settings*/
+
 body {
     background-color: #04141d;
     color: white;
-    margin: 2%;
+    padding: 2%;
+    border-color: white;
+    border-style: solid;
+    box-sizing: border-box; 
+    min-height: 100vh;
 }
 
 /*divs*/
