@@ -40,12 +40,18 @@ body {
     .bio-short{
         margin: 2%;
     }
-    .description > h1 {
+    .description > h1, .description > p {
         position: relative!important;
         float:none!important;
-        margin: 2%!important;
+        margin-left: 4%!important;
         width: 95%!important;
     }
+
+    a > button {
+        margin-left: 4% !important;
+        margin-bottom: 4% !important;
+    }
+
     #img_profile{
         width: 25%!important;
         height: 25%!important;
@@ -150,6 +156,12 @@ a:hover {
 
 .not-active:focus{
     background-color: white;
+}
+
+.btn-back::before{
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f137";
 }
 
 .btn-light a {
