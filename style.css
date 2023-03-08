@@ -114,6 +114,13 @@ a:hover {
     content: none;
 }
 
+/*blockquotes*/
+
+blockquote{
+    margin-left: 0rem;
+    border-left: rgba(255, 255, 255, 0.5) 3px solid;
+    padding-left: 2rem;
+}
 /*images*/
 #img_profile{
     height: 50%;
