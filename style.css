@@ -117,7 +117,7 @@ a:hover {
 /*blockquotes*/
 
 blockquote{
-    margin-left: 0rem;
+    margin: 1rem 1rem 1rem 0rem;
     border-left: rgba(255, 255, 255, 0.5) 3px solid;
     padding-left: 2rem;
 }
