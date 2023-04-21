@@ -58,6 +58,10 @@ body {
         height: 35% !important;
         margin-left: 1rem;
     }
+
+    .fa-brands {
+        font-size: xx-large !important;
+    }
 }
 .description {
     width: 25%;
