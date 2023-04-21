@@ -13,7 +13,7 @@ function toggleContainers(div, content) {
     });
     };
 
-toggleContainers("div-social", "social-content");
+//toggleContainers("div-social", "social-content");
 toggleContainers("div-news", "news-content");
 
 toggleContainers("div-activities", "activities-content");
