@@ -155,7 +155,13 @@ blockquote{
 }
 
 blockquote::before{
-    content: "\f10e ";
+    content: "\f10d ";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900; 
+}
+
+.citation::after{
+    content: " \f10e";
     font-family: "Font Awesome 5 Free";
     font-weight: 900; 
 }
