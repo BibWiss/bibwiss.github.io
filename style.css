@@ -34,7 +34,6 @@ body {
         width: 100%!important;
         height: 100%!important;
         position: relative !important;
-        z-index: -1;
     }
     .container{
         width: 100%;
