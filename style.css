@@ -2,13 +2,15 @@
 
 body {
     background-color: #04141d;
-    color: white;
-    padding: 4%;
-    border-color: white;
-    border-style: solid;
-    box-sizing: border-box; 
-    min-height: 100vh;
-    font-family: monospace;
+color: white;
+padding: 4%;
+border-style: solid;
+box-sizing: border-box;
+min-height: 100vh;
+font-family: monospace;
+border-image-source: linear-gradient(to left, #743ad5, #f637b0);
+border-image-slice: 1;
+border-width: 5px;
 }
 
 /*divs*/
