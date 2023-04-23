@@ -80,6 +80,7 @@ border-width: 5px;
     width: 25%;
     height: 25%;
     position:fixed;
+    word-wrap: break-word;
 }
 
 .description-index {
