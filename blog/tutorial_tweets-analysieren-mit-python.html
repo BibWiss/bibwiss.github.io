@@ -46,7 +46,8 @@ Wir befinden uns in einer Zeit, in der nicht nur Verschwörungstheorien vom "Inf
 Dass Trump später immer wieder die primär nicht-konservativen Nachrichtenmedien als Feind der amerikanischen Bevölkerung bezeichnet, wird unter anderem in dem Artikel "Defining the Enemy: How Donald Trump Frames the News Media" [<a class="internal-link" href="#meeks-2019">Meeks 2019</a>] herausgestellt. Allgemein sind <b>Nachrichten und Medien</b> ein vergleichsweise häufig adressiertes Thema in Tweets Trumps [<a class="internal-link" href="#meeks-2019">Meeks 2019</a>, S. 17] [<a class="internal-link" href="#wang-2016">Wang et al. 2016</a>, S. 721], dessen Analyse relevante und neuartige Ergebnisse hervorbringen kann. Unser Mediensystem vollzieht aktuell eine Transformation von kontrollierten Top-Down-Prozessen mit journalistischen Gatekeepern hin zu einem stärker dezentralisierten <b>"hybrid media system"</b> (der Begriff geht auf Chadwicks "The Hybrid Media System: Politics and Power" zurück), in welchem digitale wie gedruckte Medien koexistieren. Die sozialen Medien erleichtern hierbei nicht nur die direkte Ansprache der Zielgruppe sowie die Dissemination von Information an ein potentiell nahezu unbegrenztes Publikum, sie unterstützen vor allem die "Entwicklung populistischer, ethnonationaler und Anti-Establishment Communities" [frei übersetzt nach <a class="internal-link" href="#wells-2020">Wells et al. 2020</a>, S. 663] in besonderem Maße.
 
 Weiterhin verwendet Trump sogenanntes <b>"framing"</b> als Überzeugungsstrategie: "the presence or absence of certain keywords, stock phrases, stereotyped images, sources of information, and sentences that provide thematically reinforcing clusters of facts or judgments" [<a class="internal-link" href="#entman-1993">Entman 1993</a>, S. 52, zitiert nach <a class="internal-link" href="#meeks-2019">Meeks (2019)</a>, S. 3]. Twitters Retweet-Funktion unterstützt das Framing zusätzlich:
-<blockquote>"Twitter gives users an easy way to repeat Trump's frames verbatim via the retweet function. [...] Twitter's 'shareability' enables Trump's frames and influence to spread outward across peer networks, adding momentum to his framing."<br/><br/><cite><a class="external-link" href="#meeks-2019">Meeks 2019</a>, S. 7.</cite></blockquote>
+<blockquote><span class="citation">Twitter gives users an easy way to repeat Trump's frames verbatim via the retweet function. [...] Twitter's 'shareability' enables Trump's frames and influence to spread outward across peer networks, adding momentum to his framing.</span> (<a class="external-link" href="#meeks-2019">Meeks 2019</a>, S. 7)</blockquote>
+
 Insofern liegt die Verantwortung für Inhalte nicht mehr ausschließlich beim Informationsproduzenten, sondern auch bei der Plattform, welche die vielfältigen Funktionalitäten zur Vernetzung und Informationsdiffusion zwischen Akteuren ermöglicht. <a class="internal-link" href="#inhalt">↑</a>
 
 <h2><span id="vorbereitung">Vorbereitung</span></h2>
@@ -124,7 +125,7 @@ df
   <thead>
     <tr>
       <th></th>
-      <th style="white-space:nowrap">source</th>
+      <th>source</th>
       <th>text</th>
       <th>created_at</th>
       <th>retweet_count</th>
@@ -195,7 +196,7 @@ df
       <td>...</td>
     </tr>
     <tr>
-      <th style="white-space:nowrap">4238</th>
+      <th>4238</th>
       <td>Twitter Web Client</td>
       <td>Donald Trump appearing today on CNN Internatio...</td>
       <td>Wed Feb 10 15:17:56 +0000 2010</td>
@@ -417,9 +418,9 @@ get_sentiment(df_media["sentiment_values"], 0)</code></pre></div>
 
 Mit der Funktion <span class="tag-code">pandas.Dataframe.describe()</span> können erste Kennzahlen für Minimum, Maximum, Mittelwert, Standardabweichung und Quantile generiert werden. Desweiteren kann die Verteilung der Ausprägungen beispielsweise mittels Histogramm oder Boxplot visualisiert werden. 
 
-<a href="https://infowissblog.de/wp-content/uploads/2020/11/hist_retweet_favorite.png"><img src="https://infowissblog.de/wp-content/uploads/2020/11/hist_retweet_favorite.png" alt="" width=45% height="185" class="alignleft size-medium wp-image-1734" /></a>
+<img src="../img/tutorial_tweets-analysieren-mit-python/hist_retweet_favorite.png" height=100% width=100%/>
 
-<a href="https://infowissblog.de/wp-content/uploads/2020/11/hist_sentiment.png"><img src="https://infowissblog.de/wp-content/uploads/2020/11/hist_sentiment.png" alt="" width=45% height="185" class="alignright size-large wp-image-1716" /></a>
+<img src="../img/tutorial_tweets-analysieren-mit-python/hist_sentiment.png" height=100% width=100%/>
 
 Die oben gezeigten <strong>Histogramme</strong> deuten bereits eine rechtsschiefe Verteilung für Retweets und Likes im Datensatz an. Für die im Nachhinein berechneten Polaritätswerte scheint annäherungsweise eine Normalverteilung vorzuliegen. Nachfolgend wird beispielhaft gezeigt, wie die Erstellung eines solchen Histogramms mit <span class="tag-code">matplotlib.pyplot.hist()</span> aussehen könnte.
 
@@ -439,7 +440,7 @@ ax.legend()
 plt.show()
 </code></pre></div>
 
-<a href="https://infowissblog.de/wp-content/uploads/2020/11/boxplots.jpg"><img src="https://infowissblog.de/wp-content/uploads/2020/11/boxplots-1024x519.jpg" alt="" width="1024" height="519" class="alignnone size-large wp-image-1738" /></a>
+<img src="../img/tutorial_tweets-analysieren-mit-python/boxplots.jpg" height=100% width=100%/>
 
 <strong>Boxplots</strong> sind eine weitere Möglichkeit zur Visualisierung der Verteilung numerischer Variablen. Die Abbildung zeigt Beispiele für die gleichen drei Variablen, erstellt mit <span class="tag-code">plotly.graph_objects.Box</span>. 
 
@@ -460,7 +461,7 @@ fig.show()</code></pre></div>
 
 Die bisherigen Visualisierungen sind auf metrische Variablen ausgerichtet, für nominal bzw. ordinal skalierte Daten muss ggf. auf alternative, simplere Methoden zurückgegriffen werden.
 
-<a href="https://infowissblog.de/wp-content/uploads/2020/11/pie_hashtags.png"><img src="https://infowissblog.de/wp-content/uploads/2020/11/pie_hashtags.png" alt="" width="1000" height="800" class="size-full wp-image-1745" /></a>
+<img src="../img/tutorial_tweets-analysieren-mit-python/pie_hashtags.png" height=100% width=100%/>
 
 Dieses <strong>Sunburst Chart</strong> (Spezialfall eines Pie Charts) beinhaltet die in den Tweets des Datensatzes enthaltenen Hashtags, welche mit ein wenig zusätzlichem qualitativen Aufwand in allgemeinere Kategorien ("medien", "medienkritik", "politisches", "show", "sonstiges", "wahlkampf") zusammengefasst wurden. Neben den zu erwartenden Hashtags zu Medien ("medien", "medienkritik", "show") sind insbesondere viele Hashtags enthalten, die der Kategorie "wahlkampf" zugeordnet wurden (u.a. #maga, #trump2016). 
 
@@ -475,7 +476,7 @@ fig.update_layout(width=900, height=900, uniformtext=dict(minsize=13, mode='hide
 fig.show()
 </code></pre></div>
 
-<a href="https://infowissblog.de/wp-content/uploads/2020/11/bar_mentions_top10.png"><img src="https://infowissblog.de/wp-content/uploads/2020/11/bar_mentions_top10.png" alt="" width="800" height="400" class="alignnone size-full wp-image-1744" /></a>
+<img src="../img/tutorial_tweets-analysieren-mit-python/bar_mentions_top10.png" height=100% width=100%/>
 
 Bei dem <strong>Bar Chart</strong> handelt es sich um eine Darstellung der 10 am häufigsten erwähnten Accounts (<span class="tag-code">mentions</span>). Primär besteht diese aus Accounts der Nachrichtensender, die bereits als Begriffe für die Zusammenstellung des Datensatzes verwendet wurden (@cnn, @nytimes, @foxnews, @nbc, @foxandfriends, @abc, @nbcnews sowie zusätzlich die @washingtonpost).
 
@@ -528,7 +529,7 @@ fig.show()
 
 Zusammenhänge zwischen Variablen lassen sich unter anderem gut in Form von sogenannten <strong>Scatterplots</strong> (Streudiagrammen) darstellen. Für die Visualisierungen wurde weiterhin die Bibliothek <a class="external-link" href="https://plotly.com/python/" target="_blank" rel="noopener noreferrer">Plotly</a> verwendet. Die Berechnung der statistischen Werte wurde mit der Python-Bibliothek <a class="external-link" href="https://researchpy.readthedocs.io/en/latest/" target="_blank" rel="noopener noreferrer">researchpy</a> durchgeführt. Diese macht übersichtliche statistische Zusammenfassungen verfügbar und baut u.a. auf statistische Funktionen von <a class="external-link" href="https://docs.scipy.org/doc/scipy/reference/stats.html" target="_blank" rel="noopener noreferrer">scipy.stats</a> auf.
 
-<a href="https://infowissblog.de/wp-content/uploads/2020/11/scatter_created-source.png"><img src="https://infowissblog.de/wp-content/uploads/2020/11/scatter_created-source-1024x384.png" alt="" width="1024" height="384" class="alignnone size-large wp-image-1759" /></a>
+<img src="../img/tutorial_tweets-analysieren-mit-python/scatter_created-source.png" height=100% width=100%/>
 
 Die Abbildung zeigt die Variablen <span class="tag-code">source</span> (verwendetes Endgerät/Applikation) und <span class="tag-code">created_at</span> (Veröffentlichungszeitpunkt des Tweets) in Form eines solchen Scatterplots. Farblich werden hier wie auch in den nachfolgenden Streudiagrammen die Polaritätswerte der Tweets repräsentiert. Die drei meistgenutzten Kanäle (Twitter for Android, Twitter Web Client und Twitter for iPhone) unterscheiden sich - wie in dieser Darstellung deutlich wird - vor allem nach ihrem zeitlichen Einsatz. Diese zeitliche Unterteilung nach verwendeten "tweet sources" deckt sich u.a. mit den Beobachtungen von [<a class="internal-link" href="#clarke-grieve-2019">Clarke/Grieve 2019</a>, S. 5f.] und deren deutlich umfangreicheren Daten.
 
@@ -577,8 +578,9 @@ Für die angepassten Daten (df=20) zeichnet sich ein starker Effekt (V = 0.73) a
 <div class="hcb_wrap">
 <pre class="prism undefined-numbers lang-python" data-lang="Python"><code>crosstab, res, expected = rp.crosstab(df_media.source, df_media.year,prop="cell",test="chi-square",correction=True, cramer_correction=True, expected_freqs=True)
 </code></pre></div>
+<img src="../img/tutorial_tweets-analysieren-mit-python/scatter_created-retweet.png" height=100% width=100%/>
 
-<a href="https://infowissblog.de/wp-content/uploads/2020/11/scatter_created-retweet.png"><img src="https://infowissblog.de/wp-content/uploads/2020/11/scatter_created-retweet-1024x384.png" alt="" width="1024" height="384" class="size-large wp-image-1758" /></a><a href="https://infowissblog.de/wp-content/uploads/2020/11/scatter_created-favorite.png"><img src="https://infowissblog.de/wp-content/uploads/2020/11/scatter_created-favorite-1024x384.png" alt="" width="1024" height="384" class="size-large wp-image-1757" /></a>
+<img src="../img/tutorial_tweets-analysieren-mit-python/scatter_created-favorite.png" height=100% width=100%/>
 
 Die Scatterplots zeigen die Verteilung von Retweets bzw. Likes über die Zeit, wobei diese auf den ersten Blick sehr ähnlich ausfallen (auch wenn die Werte für <span class="tag-code">favorite_count</span> nach oben stärker gestreckt sind). Auffällig ist vor allem der starke Anstieg sowohl von Retweets als auch Likes für Tweets ab ca. 2016, also zum Zeitpunkt von Trumps Präsidentschaftskandidatur. Die folgende Tabelle fasst die Werte für die Korrelation mit <strong>parametrischen (Pearson) wie nicht-parametrischen Verfahren (Spearman, Kendall)</strong> für die Variablen <span class="tag-code">retweet_count</span> und <span class="tag-code">year</span>, <span class="tag-code">favorite_count</span> und <span class="tag-code">year</span> sowie <span class="tag-code">favorite_count</span> und <span class="tag-code">retweet_count</span> zusammen.
 
@@ -652,7 +654,7 @@ Die Korrelationskoeffizienten können mit <span class="tag-code">researchpy.corr
 
 Die in der Tabelle festgehaltenen Werte für die Korrelation von <span class="tag-code">retweet_count</span> x <span class="tag-code">year</span> und <span class="tag-code">favorite_count</span> x <span class="tag-code">year</span> deuten auf einen starken und positiven linearen Zusammenhang hin. Die Variablen <span class="tag-code">retweet_count</span> und <span class="tag-code">favorite_count</span> mit ihren übermäßig hohen Werten für einen Zusammenhang könnten allerdings ein Anzeichen dafür sein, dass es sich um eine <strong>Scheinkorrelation</strong> ("spurious relationship"/"spurious correlation") handelt: 
 
-<blockquote>"A relationship between two variables that is caused by a statistical artifact or a factor, not included in the model, that is related to both variables."<br/><br/><cite><a class="external-link" href="#downey-2014">Downey 2014</a>, S. 143</cite></blockquote> 
+<blockquote><span class="citation">A relationship between two variables that is caused by a statistical artifact or a factor, not included in the model, that is related to both variables.</span> (<a class="external-link" href="#downey-2014">Downey 2014</a>, S. 143)</blockquote> 
 
 Es könnte demnach eine Korrelation bestehen, die jedoch nicht kausal begründet werden kann. Vermutlich ist eine weitere, sogenannte <strong>konfundierende Variable</strong> ("Störvariable"), wie beispielsweise die über die Zeit ansteigende Followerzahl, ursächlich für eine ähnlich hohe Anzahl an Retweets wie Likes [vgl. <a class="internal-link" href="wang-2016">Wang et al. 2016</a>, S. 721]. <a class="internal-link" href="#inhalt">↑</a>
 
@@ -741,11 +743,11 @@ In der folgenden Tabelle sind die <strong>10 häufigsten Pentagramme</strong> au
 </tbody>
 </table>
 
-<a href="https://infowissblog.de/wp-content/uploads/2020/11/scatter_ngrams-created.png"><img src="https://infowissblog.de/wp-content/uploads/2020/11/scatter_ngrams-created-1024x384.png" alt="" width="1024" height="384" class="alignnone size-large wp-image-1760" /></a>
+<img src="../img/tutorial_tweets-analysieren-mit-python/scatter_ngrams-created.png" height=100% width=100%/>
 
 Betrachtet man diese häufigsten Textfragmente im Datensatz nach ihrer zeitlichen Veröffentlichung, so wird deutlich, was aufgrund der vorausgegangen Untersuchungen schon erahnt werden konnte: spätestens ab dem Amtsantritt Trumps scheinen sich auch Sprache und Inhalte der Tweets zu ändern. Die Ergebnisse von Clarke/Grieve (2019) stimmen damit überein:
 
-<blockquote>"All four dimensions showed clear temporal patterns and most major shifts in style align to a small number of indisputably important points in the Trump timeline, especially the 2011 Birther controversy, the 2012 election, his 2015 declaration, his 2016 Republican nomination, the 2016 election, and his 2017 inauguration, as well as the seasons of his television series <em>The Apprentice</em>."<br/><br/><cite><a class="external-link" href="#clarke-grieve-2019">Clarke/Grieve 2019</a>, S. 19</cite></blockquote>
+<blockquote><span class="citation">All four dimensions showed clear temporal patterns and most major shifts in style align to a small number of indisputably important points in the Trump timeline, especially the 2011 Birther controversy, the 2012 election, his 2015 declaration, his 2016 Republican nomination, the 2016 election, and his 2017 inauguration, as well as the seasons of his television series <em>The Apprentice</em>.</span> (<a class="external-link" href="#clarke-grieve-2019">Clarke/Grieve 2019</a>, S. 19)</blockquote>
 
 Es sei zwar darauf hingewiesen, dass in der Abbildung nur ein kleiner Ausschnitt aller N-Gramme dargestellt wird (es wurden insgesamt 75756 N-Gramme aus dem Datensatz extrahiert). Dennoch kann vermutet werden, dass sich frühere Tweets eher mit Medien im Kontext des Unterhaltungsfernsehens (hier: Fox & Friends) auseinandersetzen, während insbesondere ab 2017 die Anzahl der distanzierenden und beschuldigenden Aussagen in Richtung Medien (Stichwörter wären "enemy", "fake news media", "failing") offensichtlich zunimmt. So macht Trump beispielsweise "die Fake News" oder "Fake News Medien" zum Feind ("the enemy of the people"):
 
@@ -763,7 +765,7 @@ Abschließend sollen einige wesentliche Erkenntnisse zusammengefasst werden.
 
 <strong>3. Das hybride Mediensystem wurde von Trump für eine möglichst breite mediale Abdeckung ausgenutzt.</strong> Das Teilen von Informationen in sozialen Medien wie Twitter sorgt einerseits dafür, dass User ihre Zustimmung zu einer bestimmten Information bzw. Meinung geben können, andererseits werden hierdurch auch Informationen in ideologisch orientierten Communities, aber auch darüber hinaus weitergetragen - was schließlich wiederum die Aufmerksamkeit traditioneller Nachrichtenmedien erregen kann. [<a class="internal-link" href="#wells-2020">Wells et al. 2020</a>, S. 664f.]
 
-<blockquote>"Furthermore, Trump tweeted more at times when he had recently garnered less of a relative advantage in news attention, suggesting he strategically used Twitter to trigger coverage."<br/><cite><a class="external-link" href="#wells-2020">Wells et al. 2020</a>, S. 559</cite></blockquote>
+<blockquote><span class="citation">Furthermore, Trump tweeted more at times when he had recently garnered less of a relative advantage in news attention, suggesting he strategically used Twitter to trigger coverage.</span> (<a class="external-link" href="#wells-2020">Wells et al. 2020</a>, S. 559)</blockquote>
 
 Demnach greift Trump mit seinen Tweets nicht nur die Opposition an, sondern attackiert ebenso für ihn gefährliche Medien [<a class="internal-link" href="#clarke-grieve-2019">Clarke/Grieve 2019</a>, S. 20] [<a class="internal-link" href="#wang-2016">Wang et al. 2016</a>, S. 719][<a class="internal-link" href="#wells-2020">Wells et al. 2020</a>, S. 661], indem er mittels Framing ein bereits bestehendes Missvertrauen der Bevölkerung gegenüber den Medien verstärkt [<a class="internal-link" href="#meeks-2019">Meeks 2019</a>, S. 5]. Letztlich könnte sich das von Trump geschaffene und über Twitter weiter verbreitete Bild der Medien auch auf die generelle öffentliche Wahrnehmung der medialen Welt auswirken [<a class="internal-link" href="#meeks-2019">Meeks 2019</a>, S. 19]. <a class="internal-link" href="#inhalt">↑</a>
 
