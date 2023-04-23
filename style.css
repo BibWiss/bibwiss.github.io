@@ -7,7 +7,7 @@ padding: 4%;
 border-style: solid;
 box-sizing: border-box;
 min-height: 100vh;
-font-family: monospace;
+font-family: Arial;
 border-image-source: linear-gradient(to left, #743ad5, #f637b0);
 border-image-slice: 1;
 border-width: 5px;
@@ -111,9 +111,10 @@ li {
     margin-right: 2%;
 }
 
-h1 {
+h1, h2 {
     color: white;
     font-weight: 500;
+    font-family: monospace;
 }
 
 .blog-title{
@@ -179,6 +180,10 @@ blockquote::before{
 }
 
 /*buttons*/
+
+button {
+    font-family: monospace;
+}
 
 .btn-light, .btn-light:hover, .btn-light:focus, .btn-light:active {
     background-color: white;
