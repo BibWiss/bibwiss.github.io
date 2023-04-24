@@ -9,7 +9,10 @@ function changeColors(link, index) {
     link.style.color = colors[index];
     })
   link.addEventListener("mouseout", function() {
-    link.style.color = "#30dcff"
+    link.style.color = "#30dcff";
+    })
+  link.addEventListener("touchcancel", function() {
+    link.style.color = "#30dcff";
     })
 };
 
