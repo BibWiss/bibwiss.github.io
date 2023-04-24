@@ -63,6 +63,10 @@ border-width: 5px;
         margin-bottom: 4% !important;
     }
 
+    a:hover {
+        color: #f637b0;
+    }
+
     #img_profile{
         width: 45% !important;
         height: 45% !important;
