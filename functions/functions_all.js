@@ -5,15 +5,17 @@ index = 0;
 function changeColors(link, index) {
   var colors = ["#743ad5", "#f637b0", "#20ffcf"];   // the color choices
   index = (index + 1) % colors.length;
-  link.addEventListener("mouseover", function() {
-    link.style.color = colors[index];
-    })
-  link.addEventListener("mouseout", function() {
-    link.style.color = "#30dcff";
-    })
-  link.addEventListener("touchcancel", function() {
-    link.style.color = "#30dcff";
-    })
+  
+  ['touchstart', 'mouseenter'].forEach(function(e){
+    link.addEventListener(e,function() {
+      link.style.color = colors[index];
+      });
+    });
+  ["mouseleave", "touchmove", "click"].forEach(function(e){
+    link.addEventListener(e,function() {
+      link.style.color = "#30dcff";
+      });
+  });
 };
 
 all_links = document.links;
