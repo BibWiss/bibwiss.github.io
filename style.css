@@ -2,11 +2,11 @@
 
 body {
     background-color: white;
-color: black;
-padding: 4%;
-box-sizing: border-box;
-min-height: 100vh;
-font-family: Arial;
+    color: black;
+    padding: 4%;
+    box-sizing: border-box;
+    min-height: 100vh;
+    font-family: Arial;
 }
 
 /*border-image-source: linear-gradient(to left, #20ffcf, #30dcff, #743ad5, #f637b0);
@@ -126,6 +126,22 @@ color: black;
     border-style: solid;
     padding: 3px;
     white-space: nowrap;
+    font-family: monospace;
+}
+
+.hashtag:hover {
+    cursor:pointer;
+}
+
+/*filtering*/
+
+.hide-pub {
+    display: none;
+}
+
+.active {
+    color:white;
+    background-color: black;
 }
 
 /*images*/
