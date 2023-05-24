@@ -25,12 +25,59 @@ function compareYear(year0, year1) {
     else {return ""};
 }
 
+function switchHashtags() {
+    if (button.classList.contains("inactive")) {
+        button.classList.remove("inactive");
+        button.classList.add("active");
+    } 
+    else if (button.classList.contains("active")) {
+        button.classList.remove("active");
+        button.classList.add("inactive");
+    }
+};
+  
+  function myFunction() {
+    let text = this.textContent;
+    if (this.classList.contains('active')) {
+      this.classList.remove('active')
+      this.classList.add('inactive')
+      const similarPubs = document.querySelectorAll(`.${'hashtag-' + text}`);
+            for (const sPub of similarPubs) {
+                sPub.classList.remove("active");
+                sPub.classList.add("inactive");
+            };
+        const resetPubs = document.querySelectorAll(`.hide-pub:not(.${text})`);
+            for (const rPub of resetPubs) {
+                rPub.classList.remove("hide-pub");
+                rPub.classList.add("show-pub");
+            };
+  
+  
+  
+    } else if (this.classList.contains('inactive')) {
+      this.classList.remove('inactive');
+      this.classList.add('active');
+      const similarPubs = document.querySelectorAll(`.${'hashtag-' + text}`);
+            for (const sPub of similarPubs) {
+                sPub.classList.remove("inactive");
+                sPub.classList.add("active");
+            };
+    const otherPubs = document.querySelectorAll(`.show-pub:not(.${text})`);
+            for (const oPub of otherPubs) {
+                oPub.classList.remove("show-pub");
+                oPub.classList.add("hide-pub");
+            };
+    } 
+    
+  
+  }
+
 // filter publication entries by clicking on hashtags
-function filterByHashtag(hashtags, publications) {
+function filterByHashtag(hashtags) {
     for (var i = 0; i < hashtags.length; i++) {
         var button = hashtags[i];
         let text = button.textContent;
-        
+
         button.onclick = function(){
             this.classList.remove("inactive");
             this.classList.add("active");
@@ -45,11 +92,20 @@ function filterByHashtag(hashtags, publications) {
             for (const oPub of otherPubs) {
                 oPub.classList.remove("show-pub");
                 oPub.classList.add("hide-pub");
-            }
-        };
-}
+            };
+               };}
 };
 
+/*function resetFilter() {
+    var active = document.getElementsByClassName("active");
+    for (var i = 0; i < active.length; i++) {
+        var button = active[i];
+        //let text = button.textContent;
+        
+        button.onclick = function(){
+            this.classList.remove("inactive");
+            this.classList.add("active"); }
+};}*/
 // add funct to change active back to inactive on click
 
 // get all metadata about publications from "data.json" file
@@ -70,21 +126,50 @@ function getMetadata(path) {
                 passageContainer.appendChild(div);
                 var year0 = jsondata["year"][i];
                 //test
-                var inactive_hashtags = document.getElementsByClassName('inactive');
-                var publications = document.getElementsByClassName('show-pub');
-                filterByHashtag(inactive_hashtags, publications);
-                //hashtags[0].innerHTML = "HELLO WORLD";
+                //var inactiveHashtags = document.getElementsByClassName('inactive');
+                //filterByHashtag(inactiveHashtags);
+
+                document.querySelectorAll('span.hashtag').forEach((x) => {
+                    x.addEventListener('click', myFunction);
+                  })
             };
         }
     );
     return jsondata;
-    
 };
 
 getMetadata("data.json");
 
+/*
+// reset filter on publications
+function resetFilter() {
+    var hashtags = document.getElementsByClassName('active');
+    for (var i = 0; i < hashtags.length; i++) {
+        var button = hashtags[i];
+        let text = button.textContent;
+        console.log(button[0]);
+        
+        button.onclick = function(){
+            this.classList.remove("active");
+            this.classList.add("inactive");
+            // change style for all hashtags with same content
+            const similarPubs = document.querySelectorAll(`.${'hashtag-' + text}`);
+            for (const sPub of similarPubs) {
+                sPub.classList.remove("active");
+                sPub.classList.add("inactive");
+            };
+            const otherPubs = document.querySelectorAll(`.show-pub:not(.${text})`);
+            for (const oPub of otherPubs) {
+                // to do: check if parent node has other children with class "active"
+                oPub.classList.remove("hide-pub");
+                oPub.classList.add("show-pub");
+            }
+        };
+}
+};
 
-
+resetFilter();
+*/
 
 
 
