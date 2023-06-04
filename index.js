@@ -1,16 +1,7 @@
 /*
 TODO
-* add dark mode
+* clean up
 */
-
-/*
-DARK MODE
-* body background #15141a, color
-* h[n] color
-* delete img border (in general)
-* a:hover color
-* hashtag border color
- */
 
 // check if a specific value in the data.json has some content or is null
 function checkIfEmptyValue(prefix, val, suffix) {
@@ -73,6 +64,44 @@ function filterByHashtag() {
 
 }
 
+function changeToDarkMode() {
+    //body
+    const body = document.getElementsByTagName("body");
+    body[0].classList.add("dark-mode");
+    body[0].classList.remove("light-mode");
+    //hashtags
+    const hashtags = document.querySelectorAll(`.hashtag`);
+    for (const tag of hashtags) {
+        tag.classList.remove("light-mode");
+        tag.classList.add("dark-mode")
+    }
+    //icons
+    const icons = document.querySelectorAll(`.internal-link`);
+    for (const icon of icons) {
+        icon.classList.remove("light-mode");
+        icon.classList.add("dark-mode")
+    } 
+};
+
+function changeToLightMode() {
+    //body
+    const body = document.getElementsByTagName("body");
+    body[0].classList.add("light-mode");
+    body[0].classList.remove("dark-mode");
+    //hashtags
+    const hashtags = document.querySelectorAll(`.hashtag`);
+    for (const tag of hashtags) {
+        tag.classList.remove("dark-mode");
+        tag.classList.add("light-mode");
+    //icons
+    const icons = document.querySelectorAll(`.internal-link`);
+    for (const icon of icons) {
+        icon.classList.add("light-mode");
+        icon.classList.remove("dark-mode")
+    } 
+    }
+};
+
 // get all metadata about publications from "data.json" file
 function getMetadata(path) {
     var passageContainer = document.getElementById("app");
@@ -94,6 +123,20 @@ function getMetadata(path) {
                     document.querySelectorAll('span.hashtag').forEach((x) => {
                         x.addEventListener('click', filterByHashtag);
                     })
+                    //var lightSwitch = document.getElementById("flexSwitchCheckDefault");
+                    //lightSwitch.addEventListener("click", changeLightMode());
+                    const someCheckbox = document.getElementById('flexSwitchCheckDefault');
+
+                    someCheckbox.addEventListener('change', e => {
+                    if(e.target.checked === true) {
+                        console.log("Checkbox is checked - boolean value: ", e.target.checked);
+                        changeToDarkMode();
+                    }
+                    if(e.target.checked === false) {
+                        console.log("Checkbox is not checked - boolean value: ", e.target.checked);
+                        changeToLightMode();
+                    }
+                    });
                 };
             }
         );
