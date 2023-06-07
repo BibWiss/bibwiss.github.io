@@ -1,8 +1,6 @@
-/*
-TODO
-* clean up
-*/
+// functions
 
+// utils
 // check if a specific value in the data.json has some content or is null
 function checkIfEmptyValue(prefix, val, suffix) {
     if (val != null) { return prefix + val + suffix }
@@ -15,6 +13,7 @@ function compareYear(year0, year1) {
     else { return "" };
 }
 
+// filter by hashtag
 var activeHashtagsListed = [];
 
 function filterByHashtag() {
@@ -64,6 +63,7 @@ function filterByHashtag() {
 
 }
 
+// light switch (change to dark/light mode)
 function changeToDarkMode() {
     //body
     const body = document.getElementsByTagName("body");
@@ -102,7 +102,8 @@ function changeToLightMode() {
     }
 };
 
-// get all metadata about publications from "data.json" file
+// get all data about publications from "data.json" file
+
 function getMetadata(path) {
     var passageContainer = document.getElementById("app");
     var jsondata;
@@ -114,20 +115,19 @@ function getMetadata(path) {
             function (json) {
                 var jsondata = json;
                 for (var i = Object.keys(jsondata.title).length; i--; i >= 0) {
+                    // for each entry in jsondata, add div and information from "data.json"
                     var div = document.createElement("div");
                     div.setAttribute("id", "div_" + (i));
-                    div.innerHTML = (`${compareYear(jsondata["year"][i], year0)}<p class="show-pub ${checkIfEmptyValue("", jsondata["type"][i], "")} ${checkIfEmptyValue("", jsondata["community"][i], "")}">${checkIfEmptyValue("<span class='authors'>", jsondata["co-author(s)"][i], "</span>: ")}<span class="title"><a href="${jsondata["link to publication"][i]}">${jsondata["title"][i]}</a></span>${checkIfEmptyValue(", in <span class='publisher'>", jsondata["publisher (e.g. journal/blog name)"][i], "</span>")}. ${checkIfEmptyValue(`<span class='hashtag hashtag-${jsondata["type"][i]} inactive'>`, jsondata["type"][i], "</span>")} ${checkIfEmptyValue(`<span class='hashtag hashtag-${jsondata["community"][i]} inactive'>`, jsondata["community"][i], "</span>")}</p>`);
+                    div.innerHTML = (`${compareYear(jsondata["year"][i], year0)}<p class="show-pub ${checkIfEmptyValue("", jsondata["type"][i], "")} ${checkIfEmptyValue("", jsondata["community"][i], "")}">${checkIfEmptyValue("<span class='authors'>", jsondata["co-author(s)"][i], "</span>: ")}<span class="title"><a href="${jsondata["link to publication"][i]}">${jsondata["title"][i]}</a></span>${checkIfEmptyValue(", in <span class='publisher'>", jsondata["publisher (e.g. journal/blog name)"][i], "</span>")}. ${checkIfEmptyValue(`<span class='hashtag hashtag-${jsondata["type"][i]} inactive light-mode'>`, jsondata["type"][i], "</span>")} ${checkIfEmptyValue(`<span class='hashtag hashtag-${jsondata["community"][i]} inactive light-mode'>`, jsondata["community"][i], "</span>")}</p>`);
                     passageContainer.appendChild(div);
                     var year0 = jsondata["year"][i];
-                    //call filter function
+                    //enable filtering by hashtag
                     document.querySelectorAll('span.hashtag').forEach((x) => {
                         x.addEventListener('click', filterByHashtag);
                     })
-                    //var lightSwitch = document.getElementById("flexSwitchCheckDefault");
-                    //lightSwitch.addEventListener("click", changeLightMode());
-                    const someCheckbox = document.getElementById('flexSwitchCheckDefault');
-
-                    someCheckbox.addEventListener('change', e => {
+                    // add functionality to lightswitch
+                    const lightSwitch = document.getElementById('flexSwitchCheckDefault');
+                    lightSwitch.addEventListener('change', e => {
                     if(e.target.checked === true) {
                         console.log("Checkbox is checked - boolean value: ", e.target.checked);
                         changeToDarkMode();
