@@ -32,7 +32,7 @@ body.dark-mode {
     font-family: Arial;
 }
 
-@media screen and (max-width: 700px)  {
+@media screen and (max-width: 480px)  {
     .description, .description-index {
         width: 100%!important;
         height: 100%!important;
@@ -57,7 +57,7 @@ body.dark-mode {
     }
 
     #img_profile{
-        margin-top: .5rem;
+        margin-top: -1rem;
         width: 25% !important;
         height: 25% !important;
         margin-left: .5rem;
@@ -90,7 +90,7 @@ body.dark-mode {
 
 .bio-short {
     float: left;
-    padding-top: 1rem;
+    padding-top: 1.3rem;
     font-family: Arial;
 }
 
@@ -98,12 +98,19 @@ body.dark-mode {
     padding-top: 1rem;
 }
 
+@media screen and (min-width: 480px) and (max-width: 900px) {
+    .bio-short {padding-top: .5rem;}
+}
+
 /*title/header*/
 
 .header{
     float:right;
-    width: 20%;
     margin-right: 2%;
+}
+
+.content {
+    margin-top: 1.5rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
