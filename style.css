@@ -1,10 +1,15 @@
 /*basic settings*/
 
+html, body {
+    overflow-x: hidden;
+  }
+
 body {
     padding: 4%;
     box-sizing: border-box;
     min-height: 100vh;
     font-family: Arial;
+    position: relative;
 }
 
 body.light-mode {
