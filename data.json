@@ -27,7 +27,8 @@
         "24": "Wie entsteht „Stellenwert“? Eine Analyse zur Charakterisierung von Schlüsselstellen in der Literatur",
         "25": "Perspectives for machine-assisted subject indexing at the Berlin State Library",
         "26": "Workshop Semi-Automatic Subject Indexing at the Berlin State Library",
-        "27": "Anforderungen an eine KI-Unterstützung für die Inhaltserschließung in der SBB-PK"
+        "27": "Que Sera, DH? Ein Bericht von der DHd 2024 in Passau",
+        "28": "Anforderungen an eine KI-Unterstützung für die Inhaltserschließung in der SBB-PK"
     },
     "type": {
         "0": "blogpost",
@@ -57,7 +58,8 @@
         "24": "thesis",
         "25": "blogpost",
         "26": "blogpost",
-        "27": "presentation"
+        "27": "blogpost",
+        "28": "presentation"
     },
     "co-author(s)": {
         "0": null,
@@ -87,7 +89,8 @@
         "24": null,
         "25": null,
         "26": null,
-        "27": "Wolfgang Seifert und Sophie Schneider"
+        "27": null,
+        "28": "Wolfgang Seifert und Sophie Schneider"
     },
     "year": {
         "0": 2017,
@@ -117,7 +120,8 @@
         "24": 2022,
         "25": 2023,
         "26": 2023,
-        "27": 2024
+        "27": 2024,
+        "28": 2024
     },
     "publisher (e.g. journal/blog name)": {
         "0": "BRaIn",
@@ -147,7 +151,8 @@
         "24": null,
         "25": "Mensch.Maschine.Kultur Blog",
         "26": "Mensch.Maschine.Kultur Blog",
-        "27": "BiblioCon2024"
+        "27": "DHd-Blog",
+        "28": "BiblioCon2024"
     },
     "community": {
         "0": "bobcatsss",
@@ -177,7 +182,8 @@
         "24": "cls",
         "25": null,
         "26": null,
-        "27": "bibliocon"
+        "27": "dhd",
+        "28": "bibliocon"
     },
     "link to publication": {
         "0": "https://web.archive.org/web/20190804090948/http://brain.fh-potsdam.de/?p=5225",
@@ -207,6 +213,7 @@
         "24": "https://doi.org/10.18452/25355",
         "25": "https://mmk.sbb.berlin/2023/04/06/perspectives-for-machine-assisted-subject-indexing-at-the-berlin-state-library/?lang=en",
         "26": "https://mmk.sbb.berlin/2023/09/05/workshop-semi-automatic-subject-indexing-at-the-berlin-state-library/?lang=en",
-        "27": "https://bibliocon2024.abstractserver.com/program/#/details/presentations/148"
+        "27": "https://dhd-blog.org/?p=20627",
+        "28": "https://bibliocon2024.abstractserver.com/program/#/details/presentations/148"
     }
 }
