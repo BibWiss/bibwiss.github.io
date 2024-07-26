@@ -1,5 +1,18 @@
 /*basic settings*/
 
+@-moz-keyframes spin { 
+    100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
+}
+
 html, body {
     overflow-x: hidden;
   }
@@ -199,6 +212,12 @@ a.internal-link.dark-mode {
     margin-right: auto;
 }
 
+#img_profile:hover{
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+
 /*buttons/icons*/
 
 .social-buttons a {
@@ -226,7 +245,7 @@ a.internal-link.dark-mode {
 
 /*HF logo (svg)*/
 svg {
-    vertical-align: bottom !important;
+    vertical-align: top !important;
     }
     
 svg:hover .path-hover {
