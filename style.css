@@ -226,7 +226,7 @@ a.internal-link.dark-mode {
 
 /*HF logo (svg)*/
 svg {
-    vertical-align: bottom;
+    vertical-align: bottom !important;
     }
     
 svg:hover .path-hover {
