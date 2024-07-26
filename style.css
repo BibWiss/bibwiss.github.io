@@ -74,7 +74,7 @@ body.dark-mode {
         margin-left: -140%;
     }
 
-    .fa-brands {
+    .fa-brands, .fa-regular, svg {
         width: 8% !important;
         margin-right: .8rem !important;
     }
@@ -219,10 +219,19 @@ a.internal-link.dark-mode {
     color: #04141d;
 }
 
-.fa-brands {
+.fa-brands, .fa-regular, svg {
     font-size: 1.8rem !important;
     margin-right: 1rem;
 }
+
+/*HF logo (svg)*/
+svg {
+    vertical-align: bottom;
+    }
+    
+svg:hover .path-hover {
+    fill: #0250bb;
+    }
 
 /*light-switch*/
 /*light-mode*/
