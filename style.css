@@ -307,7 +307,14 @@ a.internal-link.dark-mode {
         top: 10vh; 
         left: 4vw; 
     }
-}}
+}
+
+#img_profile:focus {
+    -webkit-animation: move 20s ease-in-out infinite, spin_back 3s linear infinite;
+    -moz-animation: move 20s ease-in-out infinite, spin_back 3s linear infinite;
+    animation: move 20s ease-in-out infinite, spin_back 3s linear infinite;
+}
+}
 
 #transp {
 	opacity: 0%;
@@ -334,12 +341,6 @@ a.internal-link.dark-mode {
     -webkit-animation: spin 4s linear infinite;
     -moz-animation: spin 4s linear infinite;
     animation: spin 4s linear infinite;
-}
-
-#img_profile:focus {
-    -webkit-animation: move 20s ease-in-out infinite, spin_back 3s linear infinite;
-    -moz-animation: move 20s ease-in-out infinite, spin_back 3s linear infinite;
-    animation: move 20s ease-in-out infinite, spin_back 3s linear infinite;
 }
 
 /*buttons/icons*/
