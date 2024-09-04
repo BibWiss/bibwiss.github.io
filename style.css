@@ -315,6 +315,13 @@ a.internal-link.dark-mode {
     animation: move 20s ease-in-out infinite, spin_back 3s linear infinite;
 }
 
+#img_profile:hover:not(:focus) {
+    -webkit-animation: spin 4s linear infinite;
+    -moz-animation: spin 4s linear infinite;
+    animation: spin 4s linear infinite;
+}
+
+
 #transp {
 	opacity: 0%;
 	position: relative;
@@ -336,7 +343,14 @@ a.internal-link.dark-mode {
     animation: none; 
 	z-index: -1;
     display: none;
-}}
+}
+
+#img_profile:hover {
+    -webkit-animation: spin 4s linear infinite;
+    -moz-animation: spin 4s linear infinite;
+    animation: spin 4s linear infinite;
+}
+}
 
 #img_profile {
 	position: absolute;
@@ -347,12 +361,6 @@ a.internal-link.dark-mode {
 	margin-left: auto; 
 	transition: transform 0.5s; 
     animation: none;
-}
-
-#img_profile:hover {
-    -webkit-animation: spin 4s linear infinite;
-    -moz-animation: spin 4s linear infinite;
-    animation: spin 4s linear infinite;
 }
 
 /*buttons/icons*/
