@@ -63,8 +63,8 @@ body.dark-mode {
 
     #img_profile{
         margin-top: -1rem;
-        width: 25% !important;
-        height: 25% !important;
+        width: 20% !important;
+        /*height: 25% !important;*/
         margin-left: .5rem;
     } 
 
@@ -216,6 +216,7 @@ a.internal-link.dark-mode {
     } 
 }
 
+@media screen and (min-width: 480px) {
 @-moz-keyframes spin_back { 
     0% {
         -moz-transform: rotate(0deg);
@@ -306,7 +307,7 @@ a.internal-link.dark-mode {
         top: 10vh; 
         left: 4vw; 
     }
-}
+}}
 
 #transp {
 	opacity: 0%;
