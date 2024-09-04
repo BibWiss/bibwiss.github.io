@@ -30,7 +30,9 @@
         "27": "Que Sera, DH? Ein Bericht von der DHd 2024 in Passau",
         "28": "Anforderungen an eine KI-Unterstützung für die Inhaltserschließung in der SBB-PK",
         "29": "Automatisierte semantische Anreicherung von historischen Texten. Erkennung und Verknüpfung von Entitäten mit Wikidata und Wikipedia",
-        "30": "Metadata of the \"Alter Realkatalog\" (ARK) of Berlin State Library (SBB)"
+        "30": "Metadata of the \"Alter Realkatalog\" (ARK) of Berlin State Library (SBB)",
+        "31": "Machine-Readable Vocabulary Files of the \"Alter Realkatalog\" (ARK) of Berlin State Library (SBB)",
+        "32": "KI-gestützte Inhaltserschließung im Projekt Mensch.Maschine.Kultur"
     },
     "type": {
         "0": "blogpost",
@@ -63,7 +65,9 @@
         "27": "blogpost",
         "28": "presentation",
         "29": "journal-article",
-        "30": "dataset"
+        "30": "dataset",
+        "31": "dataset",
+        "32": "presentation"
     },
     "co-author(s)": {
         "0": null,
@@ -96,7 +100,9 @@
         "27": null,
         "28": "Wolfgang Seifert und Sophie Schneider",
         "29": "Kai Labusch, Sophie Schneider und Clemens Neudecker",
-        "30": "Jörg Lehmann und Sophie Schneider"
+        "30": "Jörg Lehmann and Sophie Schneider",
+        "31": "Sophie Schneider and Jörg Lehmann",
+        "32": null
     },
     "year": {
         "0": 2017,
@@ -129,7 +135,9 @@
         "27": 2024,
         "28": 2024,
         "29": 2024,
-        "30": 2024
+        "30": 2024,
+        "31": 2024,
+        "32": 2024
     },
     "publisher (e.g. journal/blog name)": {
         "0": "BRaIn",
@@ -162,7 +170,9 @@
         "27": "DHd-Blog",
         "28": "BiblioCon2024",
         "29": "B.I.T.online",
-        "30": "Zenodo"
+        "30": "Zenodo",
+        "31": "Zenodo",
+        "32": "28. GBV-Verbundkonferenz 2024"
     },
     "community": {
         "0": "bobcatsss",
@@ -195,7 +205,9 @@
         "27": "dhd",
         "28": "bibliocon",
         "29": null,
-        "30": null
+        "30": null,
+        "31": null,
+        "32": "gbv"
     },
     "link to publication": {
         "0": "https://web.archive.org/web/20190804090948/http://brain.fh-potsdam.de/?p=5225",
@@ -228,6 +240,8 @@
         "27": "https://dhd-blog.org/?p=20627",
         "28": "https://bibliocon2024.abstractserver.com/program/#/details/presentations/148",
         "29": "https://www.b-i-t-online.de/heft/2024-03-fachbeitrag-labusch.pdf",
-        "30": "https://doi.org/10.5281/zenodo.12783814"
+        "30": "https://doi.org/10.5281/zenodo.12783814",
+        "31": "https://doi.org/10.5281/zenodo.13301019",
+        "32": "https://doi.org/10.5281/zenodo.13365610"
     }
 }
