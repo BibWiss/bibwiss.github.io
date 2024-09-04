@@ -1,18 +1,5 @@
 /*basic settings*/
 
-@-moz-keyframes spin { 
-    100% { -moz-transform: rotate(360deg); } 
-}
-@-webkit-keyframes spin { 
-    100% { -webkit-transform: rotate(360deg); } 
-}
-@keyframes spin { 
-    100% { 
-        -webkit-transform: rotate(360deg); 
-        transform:rotate(360deg); 
-    } 
-}
-
 html, body {
     overflow-x: hidden;
   }
@@ -79,7 +66,7 @@ body.dark-mode {
         width: 25% !important;
         height: 25% !important;
         margin-left: .5rem;
-    }
+    } 
 
     .social-media-icons {
         margin-top: 25%;
@@ -204,18 +191,154 @@ a.internal-link.dark-mode {
 
 /*images*/
 
-#img_profile{
-    height: 50%;
-    width: 50%;
-    border-radius: 50%;
-    display: block;
-    margin-right: auto;
+@-moz-keyframes spin { 
+    0% {
+        -moz-transform: rotate(0deg);
+    }
+    100% {
+        -moz-transform: rotate(360deg); 
+    } 
+}
+@-webkit-keyframes spin { 
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg); 
+    }  
+}
+@keyframes spin { 
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg); 
+    } 
 }
 
-#img_profile:hover{
-    -webkit-animation:spin 4s linear infinite;
-    -moz-animation:spin 4s linear infinite;
-    animation:spin 4s linear infinite;
+@-moz-keyframes spin_back { 
+    0% {
+        -moz-transform: rotate(0deg);
+    }
+    100% {
+        -moz-transform: rotate(-360deg); 
+    } 
+}
+@-webkit-keyframes spin_back {
+	0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(-360deg); 
+    } 
+}
+@keyframes spin_back { 
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    } 
+}
+
+@-moz-keyframes move {
+    0% {
+        top: 10vh; 
+        left: 4vw; 
+    }
+    25% {
+        top: 10vh; 
+        left: 87.5vw;
+    }
+    50% {
+        top: 74.0vh; 
+        left: 87.5vw;
+    }
+    75% {
+        top: 74.0vh; 
+        left: 4vw; 
+    }
+    100% {
+        top: 10vh; 
+        left: 4vw; 
+    }
+}
+@-webkit-keyframes move {
+    0% {
+        top: 10vh; 
+        left: 4vw; 
+    }
+    25% {
+        top: 10vh; 
+        left: 87.5vw;
+    }
+    50% {
+        top: 74.0vh; 
+        left: 87.5vw;
+    }
+    75% {
+        top: 74.0vh; 
+        left: 4vw; 
+    }
+    100% {
+        top: 10vh; 
+        left: 4vw; 
+    }
+} 
+@keyframes move {
+    0% {
+        top: 10vh; 
+        left: 4vw; 
+    }
+    25% {
+        top: 10vh; 
+        left: 87.5vw; 
+    }
+    50% {
+        top: 74.0vh; 
+        left: 87.5vw; 
+    }
+    75% {
+        top: 74.0vh; 
+        left: 4vw; 
+    }
+    100% {
+        top: 10vh; 
+        left: 4vw; 
+    }
+}
+
+#transp {
+	opacity: 0%;
+	position: relative;
+	height: 50%;
+	width: 50%;
+    border-radius: 50%; 
+    animation: none; 
+	z-index: -1;
+}
+
+#img_profile {
+	position: absolute;
+	height: auto;
+	width: 11.5%;
+    border-radius: 50%;
+	margin-top: auto;
+	margin-left: auto; 
+	transition: transform 0.5s; 
+    animation: none;
+}
+
+#img_profile:hover {
+    -webkit-animation: spin 4s linear infinite;
+    -moz-animation: spin 4s linear infinite;
+    animation: spin 4s linear infinite;
+}
+
+#img_profile:focus {
+    -webkit-animation: move 20s ease-in-out infinite, spin_back 3s linear infinite;
+    -moz-animation: move 20s ease-in-out infinite, spin_back 3s linear infinite;
+    animation: move 20s ease-in-out infinite, spin_back 3s linear infinite;
 }
 
 /*buttons/icons*/
