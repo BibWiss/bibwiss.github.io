@@ -32,7 +32,9 @@
         "29": "Automatisierte semantische Anreicherung von historischen Texten. Erkennung und Verknüpfung von Entitäten mit Wikidata und Wikipedia",
         "30": "Metadata of the \"Alter Realkatalog\" (ARK) of Berlin State Library (SBB)",
         "31": "Machine-Readable Vocabulary Files of the \"Alter Realkatalog\" (ARK) of Berlin State Library (SBB)",
-        "32": "KI-gestützte Inhaltserschließung im Projekt Mensch.Maschine.Kultur"
+        "32": "KI-gestützte Inhaltserschließung im Projekt Mensch.Maschine.Kultur",
+        "33": "Anforderungsanalyse für die semi-automatisierte Sacherschließung an der Staatsbibliothek zu Berlin",
+        "34": "Named Entity Uncertainty Mining: Von der intellektuellen zur computergestützten Untersuchung unsicherer Annotationen [Angenommen]"
     },
     "type": {
         "0": "blogpost",
@@ -67,7 +69,9 @@
         "29": "journal-article",
         "30": "dataset",
         "31": "dataset",
-        "32": "presentation"
+        "32": "presentation",
+        "33": "journal-article",
+        "34": "presentation"
     },
     "co-author(s)": {
         "0": null,
@@ -102,7 +106,9 @@
         "29": "Kai Labusch, Sophie Schneider und Clemens Neudecker",
         "30": "Jörg Lehmann and Sophie Schneider",
         "31": "Sophie Schneider and Jörg Lehmann",
-        "32": null
+        "32": null,
+        "33": "Wolfgang Seifert und Sophie Schneider",
+        "34": "Sophie Schneider, Michał Bubula, Kai Labusch, Jörg Lehmann und Clemens Neudecker"
     },
     "year": {
         "0": 2017,
@@ -137,7 +143,9 @@
         "29": 2024,
         "30": 2024,
         "31": 2024,
-        "32": 2024
+        "32": 2024,
+        "33": 2024,
+        "34": 2025
     },
     "publisher (e.g. journal/blog name)": {
         "0": "BRaIn",
@@ -172,7 +180,9 @@
         "29": "B.I.T.online",
         "30": "Zenodo",
         "31": "Zenodo",
-        "32": "28. GBV-Verbundkonferenz 2024"
+        "32": "28. GBV-Verbundkonferenz 2024",
+        "33": "O-Bib",
+        "34": "DHd2025"
     },
     "community": {
         "0": "bobcatsss",
@@ -207,7 +217,9 @@
         "29": null,
         "30": null,
         "31": null,
-        "32": "gbv"
+        "32": "gbv",
+        "33": null,
+        "34": "dhd"
     },
     "link to publication": {
         "0": "https://web.archive.org/web/20190804090948/http://brain.fh-potsdam.de/?p=5225",
@@ -242,6 +254,8 @@
         "29": "https://www.b-i-t-online.de/heft/2024-03-fachbeitrag-labusch.pdf",
         "30": "https://doi.org/10.5281/zenodo.12783814",
         "31": "https://doi.org/10.5281/zenodo.13301019",
-        "32": "https://doi.org/10.5281/zenodo.13365610"
+        "32": "https://doi.org/10.5281/zenodo.13365610",
+        "33": "https://doi.org/10.5282/o-bib/6075",
+        "34": "https://dhd2025.dig-hum.de/?page_id=650"
     }
 }
