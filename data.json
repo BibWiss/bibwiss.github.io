@@ -34,7 +34,7 @@
         "31": "Machine-Readable Vocabulary Files of the \"Alter Realkatalog\" (ARK) of Berlin State Library (SBB)",
         "32": "KI-gestützte Inhaltserschließung im Projekt Mensch.Maschine.Kultur",
         "33": "Anforderungsanalyse für die semi-automatisierte Sacherschließung an der Staatsbibliothek zu Berlin",
-        "34": "Named Entity Uncertainty Mining: Von der intellektuellen zur computergestützten Untersuchung unsicherer Annotationen [Angenommen]"
+        "34": "Named Entity Uncertainty Mining: Von der intellektuellen zur computergestützten Untersuchung unsicherer Annotationen"
     },
     "type": {
         "0": "blogpost",
@@ -256,6 +256,6 @@
         "31": "https://doi.org/10.5281/zenodo.13301019",
         "32": "https://doi.org/10.5281/zenodo.13365610",
         "33": "https://doi.org/10.5282/o-bib/6075",
-        "34": "https://dhd2025.dig-hum.de/?page_id=650"
+        "34": "https://doi.org/10.5281/zenodo.14942976"
     }
 }
