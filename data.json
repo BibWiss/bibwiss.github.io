@@ -34,7 +34,8 @@
         "31": "Machine-Readable Vocabulary Files of the \"Alter Realkatalog\" (ARK) of Berlin State Library (SBB)",
         "32": "KI-gestützte Inhaltserschließung im Projekt Mensch.Maschine.Kultur",
         "33": "Anforderungsanalyse für die semi-automatisierte Sacherschließung an der Staatsbibliothek zu Berlin",
-        "34": "Named Entity Uncertainty Mining: Von der intellektuellen zur computergestützten Untersuchung unsicherer Annotationen"
+        "34": "Named Entity Uncertainty Mining: Von der intellektuellen zur computergestützten Untersuchung unsicherer Annotationen",
+        "35": "ZEFYS2025: A German Historical Newspaper Dataset for Named Entity Recognition and Entity Linking [Accepted]"
     },
     "type": {
         "0": "blogpost",
@@ -71,7 +72,8 @@
         "31": "dataset",
         "32": "presentation",
         "33": "journal-article",
-        "34": "presentation"
+        "34": "presentation",
+        "35": "presentation"
     },
     "co-author(s)": {
         "0": null,
@@ -108,7 +110,8 @@
         "31": "Sophie Schneider and Jörg Lehmann",
         "32": null,
         "33": "Wolfgang Seifert und Sophie Schneider",
-        "34": "Sophie Schneider, Michał Bubula, Kai Labusch, Jörg Lehmann und Clemens Neudecker"
+        "34": "Sophie Schneider, Michał Bubula, Kai Labusch, Jörg Lehmann und Clemens Neudecker",
+        "35": "Sophie Schneider, Ulrike Förstel, Kai Labusch, Jörg Lehmann and Clemens Neudecker"
     },
     "year": {
         "0": 2017,
@@ -145,7 +148,8 @@
         "31": 2024,
         "32": 2024,
         "33": 2024,
-        "34": 2025
+        "34": 2025,
+        "35": 2025
     },
     "publisher (e.g. journal/blog name)": {
         "0": "BRaIn",
@@ -182,7 +186,8 @@
         "31": "Zenodo",
         "32": "28. GBV-Verbundkonferenz 2024",
         "33": "O-Bib",
-        "34": "DHd2025"
+        "34": "DHd2025",
+        "35": "KONVENS 2025"
     },
     "community": {
         "0": "bobcatsss",
@@ -219,7 +224,8 @@
         "31": null,
         "32": "gbv",
         "33": null,
-        "34": "dhd"
+        "34": "dhd",
+        "35": "konvens"
     },
     "link to publication": {
         "0": "https://web.archive.org/web/20190804090948/http://brain.fh-potsdam.de/?p=5225",
@@ -256,6 +262,7 @@
         "31": "https://doi.org/10.5281/zenodo.13301019",
         "32": "https://doi.org/10.5281/zenodo.13365610",
         "33": "https://doi.org/10.5282/o-bib/6075",
-        "34": "https://doi.org/10.5281/zenodo.14942976"
+        "34": "https://doi.org/10.5281/zenodo.14942976",
+        "35": "https://konvens-2025.hs-hannover.de/program/"
     }
 }
