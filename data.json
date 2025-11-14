@@ -35,7 +35,8 @@
         "32": "KI-gestützte Inhaltserschließung im Projekt Mensch.Maschine.Kultur",
         "33": "Anforderungsanalyse für die semi-automatisierte Sacherschließung an der Staatsbibliothek zu Berlin",
         "34": "Named Entity Uncertainty Mining: Von der intellektuellen zur computergestützten Untersuchung unsicherer Annotationen",
-        "35": "ZEFYS2025: A German Historical Newspaper Dataset for Named Entity Recognition and Entity Linking"
+        "35": "ZEFYS2025: A German Historical Newspaper Dataset for Named Entity Recognition and Entity Linking",
+        "36": "Per Anhalter durch die Gutenberg-Galaxis: Entdeckungen und Ergebnisse aus dem Projekt \"Mensch.Maschine.Kultur\" [Accepted]"
     },
     "type": {
         "0": "blogpost",
@@ -73,7 +74,8 @@
         "32": "presentation",
         "33": "journal-article",
         "34": "presentation",
-        "35": "presentation"
+        "35": "presentation",
+        "36": "poster"
     },
     "co-author(s)": {
         "0": null,
@@ -111,7 +113,8 @@
         "32": null,
         "33": "Wolfgang Seifert und Sophie Schneider",
         "34": "Sophie Schneider, Michał Bubula, Kai Labusch, Jörg Lehmann und Clemens Neudecker",
-        "35": "Sophie Schneider, Ulrike Förstel, Kai Labusch, Jörg Lehmann and Clemens Neudecker"
+        "35": "Sophie Schneider, Ulrike Förstel, Kai Labusch, Jörg Lehmann and Clemens Neudecker",
+        "36": "Clemens Neudecker, Irina Dumitriu, Ulrike Förstel, Mike Gerber, Kai Labusch, Jörg Lehmann, Vahid Rezanezhad, Sophie Schneider und Wolfgang Seifert"
     },
     "year": {
         "0": 2017,
@@ -149,7 +152,8 @@
         "32": 2024,
         "33": 2024,
         "34": 2025,
-        "35": 2025
+        "35": 2025,
+        "36": 2026
     },
     "publisher (e.g. journal/blog name)": {
         "0": "BRaIn",
@@ -187,7 +191,8 @@
         "32": "28. GBV-Verbundkonferenz 2024",
         "33": "O-Bib",
         "34": "DHd2025",
-        "35": "KONVENS 2025"
+        "35": "KONVENS 2025",
+        "36": "DHd2026"
     },
     "community": {
         "0": "bobcatsss",
@@ -225,7 +230,8 @@
         "32": "gbv",
         "33": null,
         "34": "dhd",
-        "35": "konvens"
+        "35": "konvens",
+        "36": "dhd"
     },
     "link to publication": {
         "0": "https://web.archive.org/web/20190804090948/http://brain.fh-potsdam.de/?p=5225",
@@ -263,6 +269,7 @@
         "32": "https://doi.org/10.5281/zenodo.13365610",
         "33": "https://doi.org/10.5282/o-bib/6075",
         "34": "https://doi.org/10.5281/zenodo.14942976",
-        "35": "https://aclanthology.org/2025.konvens-1.5.pdf"
+        "35": "https://aclanthology.org/2025.konvens-1.5.pdf",
+        "36": "https://digitalhumanities.de/2025/06/20/call-for-papers-dhd2026/"
     }
 }
